@@ -1,7 +1,25 @@
 aid: j-entendi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/j-entendi.png
 name: Já Entendi
-description: Já Entendi is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Já Entendi is a Brazilian corporate-education (EdTech) company based in Curitiba that
+  converts traditional corporate training materials into short, video-based online courses designed
+  for workforces with lower levels of formal education. Its learning platform combines andragogy,
+  heutagogy, storytelling, neurolinguistics, instructional design, and mind mapping to deliver more
+  effective learning, offering both custom-built training solutions for large employee bases with
+  sensitive or confidential content and a catalog of ready-made courses, all with integrated video
+  lessons, assessments, and exercises. The company reports 1.2M+ students, 100+ courses, and 1,600+
+  videos delivered. Backed by 500 Global. No public developer portal, API, or SDK is published.
 url: https://raw.githubusercontent.com/api-evangelist/j-entendi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Education
+- E-Learning
+- EdTech
+- Corporate Training
+- Video
+- Online Learning
+- Brazil
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/j-entendi-domain-security.yml
 - type: Website
   url: https://jaentendi.com.br
+- type: Blog
+  url: http://blog.jaentendi.com.br/
+- type: Support
+  url: https://jaentendi.com.br/#contato
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
